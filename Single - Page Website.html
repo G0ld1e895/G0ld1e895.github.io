@@ -1,0 +1,145 @@
+	<!DOCTYPE html>
+
+	<html lang = "en-US">
+
+	<head>
+		<meta charset="UTF-8">
+	<meta name="description" content="Assignment 1 - Single Page Website">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="Hayma Neebar">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Favourite Foods of Trinidad and Tobago</title>
+	<link rel="stylesheet" href="CSS/one-page_stylesheet.css">
+	</head>
+
+	<body>
+	<header>
+	<h1>Favourite Foods in Trinidad &amp; Tobago</h1>
+	<img src = "Images/FavouriteFoods1.jpg" alt = "Favourite Foods in Trinidad and Tobago" width= "400" height = "400">
+	</header>
+
+	<nav>
+	<ul>
+	<!--Hyperlinks( Absolute URLs)-->
+	<li><a href =" https://en.wikipedia.org/wiki/Trinidad_and_Tobago_cuisine" target ="_blank">Cuisine</a></li>
+	<li><a href = "https://www.tasteatlas.com/trinidad-and-tobago" target= "_blank">Taste T &amp;T</a></li>
+	<li><a href = "https://www.youtube.com/hashtag/trinidadfood" target= "_blank">#trinidadfood</a></li>
+	</ul>
+	</nav>
+
+	<section>
+	<h2>Introduction</h2>
+	<article>
+	<p>
+	The nation's cuisine is a fusion of African, Indian, Indigenous , European, Chinese & Middle Eastern infuences creating a distinct Trinbagonian identity that reflects the country's multicultural history.
+	Food culture in Trinidad and Tobago serves as a primary means for bringing people together where meals are shared amongst family and friends, especially as a traditional Sunday lunch and festive occasions like Christmas where foods such as callaloo and crab or pelau enjoyed together. Street foods like doubles are deliciously satisfying for persons who are busy on mornings and as a post-Carnival staple.
+	</p>
+	
+	</article>
+	</section>
+
+	<!--List-->
+	<section id="foods">
+	<h2>My Favourite Foods</h2>
+	<ul>
+		<li>Doubles - I enjoy this spicy and savoury edible as an <mark><em>appetizer</em></mark> before breakfast.</li>
+		<li>Callaloo - For me,callaloo is <b>best eaten</b> with rice and peas and stewed chicken during lunch time. </li>
+		<li>Dhalpuri - For me,the <strong>best savoury roti</strong>, filled with seasoned, spicy ground dhal compliments any spicy, curried meat such as chicken or duck and is suitable for lunch or dinner with family or friends.</li>
+		<li>Pelau - I enjoy this meal with <i>&quot;a portion of vegetable salad&quot;</i> for Sunday lunch with family.</li>
+	</ul>
+	</section>
+	
+	<!--Table-->
+	<section id = "table">
+	<h2 align="center">Favourite Local Foods</h2>
+	<table width ="100%" border="5" cellpadding="50">
+		<thead>
+		<tr>
+		<th>Food</th>
+		<th>Description</th>
+		<th>Image</th>
+		</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+			<td>Doubles</td>
+			<td>Iconic street food made of 2 pieces of soft, fried, flat bread called bara filled with spiced, curried chickpeas. A vegan dish served with a variety of condiments such as tamarind sauce, kuchela and cucumber.</td>
+			<td><img src = "Images/doubles.jpg" alt= "doubles" width= "250" height= "250"></td>
+			</tr>
+			
+			<tr>
+			<td>Callaloo</td>
+			<td>Thick, creamy, stew-like dish made with dasheen bush, simmered with okra,coconut milk and a variety of aromatics including pumpkin, carrots, scallions, garlic and pimento peppers.</td>
+			<td><img src="Images/callaloo.jpg" alt= "callaloo" width= "250" height= "250"></td>
+			</tr>
+			
+			<tr>
+			<td>Dhalpuri</td>
+			<td>A flatbread stuffed with a seasoned mixture of ground split peas(spiced with turmeric, cumin, garlic and cilantro locally called shadow beni).</td>
+			<td><img src="Images/dhalpuri.jpg" alt= "dhalpuri" width= "250" height= "250"> </td>
+			</tr>
+			
+			<tr>
+			<td>Pelau</td>
+			<td>One-pot rice dish with chicken browned in caramelized sugar with rice, pigeon peas, coconut milk, various vegetables and fresh herbs such as coriander or shadow beni. </td>
+			<td><img src="Images/Pelau.jpg" alt= "Pelau" width="250" height="250"></td>
+			</tr>
+			
+			
+		</tbody>
+	
+	</table>
+	</section>
+	
+	<!--FORM-->
+	<section id="form">
+	<h3>Share your Favourite Food</h3>
+	<form action="#" method="post">
+	
+	<!--Text Inputs-->
+	<label for="name">Your Name:</label><br>
+	<input type="text" id="name" name="name" required><br><br>
+	
+	<label for="food">Favourite Local Food:</label><br>
+	<input type="text" id="food" name="food" required><br><br>
+	
+	<!--Radio Buttons-->
+	<p>How often do you eat local foods?</p>
+	<input type="radio" id="daily" name="frequency" value="Daily">
+	<label for="daily">Daily</label><br>
+	<input type="radio" id="weekly" name="frequency" value="Weekly">
+	<label for="weekly">Weekly</label><br>
+	<input type="radio" id="occasionally" name="frequency" value="Occasionally">
+	<label for="occasionally">Occasionally</label><br>
+	
+	<!--Checkboxes-->
+	<p>Which foods do you enjoy?</p>
+	<input type="checkbox" id="doubles" name="foods" value="Doubles">
+	<label for="doubles">Doubles</label><br>
+	<input type="checkbox" id="pelau" name="foods" value="Pelau">
+	<label for="pelau">Pelau</label><br>
+	<input type="checkbox" id="callaloo" name="foods" value="Callaloo">
+	<label for="callaloo">Callaloo</label><br>
+	<input type="checkbox" id="roti" name="foods" value="Roti">
+	<label for="roti">Dhalpuri</label><br><br>
+	
+	 <label for="comments"> Additional Comments</label><br>
+	 <textarea id="comments" name="comments" rows="5" cols="45" placeholder="Please share your thoughts! Write here in space.">
+	 </textarea><br><br>
+	 
+	 <!--Submit Buttons-->
+	 
+	 <button type="submit" id="submit-btn">Submit</button>
+	 <button type="reset" id="reset">Reset</button>
+	 </form>
+	 </section>
+	 
+	 <footer>
+  <p>&copy; 2026 Favourite Foods in Trinidad and Tobago | Created by:<i><b>Hayma Neebar</b></i></p>
+  
+</footer>
+	 
+	</body>
+
+	</html>
